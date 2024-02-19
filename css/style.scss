@@ -8,7 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     color: #fff;
     scroll-behavior: smooth;
-    padding: 50px;
+    padding: 70px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
     .tns-nav {
@@ -69,12 +69,25 @@ body {
     .modal-content {
       margin: 0% auto;
       max-width: 800px;
-      animation: fadeIn 0.5s ease-in-out; 
+      animation: fadeIn 0.5s ease-in-out;
+      .close-button {
+        background: none;
+        border: 0;
+        color: #fff;
+        font-weight: 900;
+        position: absolute;
+        top: 1%;
+        right: 1%;
+      }
+      iframe {
+        width: 100%!important;
+      }
       img {
         display: inline-block;
         vertical-align: top;
         margin: 0px; 
         max-width: 800px;
+        width: 100%;
       }
     }
   }
@@ -85,10 +98,11 @@ body {
     text-align: center;
     @media (min-width: 1400px) {
       padding: 0px;
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
+      margin-top: 60px;
+      // position: fixed;
+      // bottom: 20px;
+      // left: 50%;
+      // transform: translateX(-50%);
     }
   }
   /* Effects */
