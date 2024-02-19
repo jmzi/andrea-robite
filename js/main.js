@@ -1,3 +1,12 @@
+
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
 let slider = tns({
   container: '.andi-slider',
   items: 1,
@@ -17,10 +26,10 @@ let slider = tns({
       items: 1
       },
       768: {
-      items: 1
+      items: 2
       },
       1400: {
-      items: 4
+      items: 3
       }
   }
   });
